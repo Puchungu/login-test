@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fondo degradado */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.box:hover {
+    border: 2px solid #6a11cb;
+}
+
+.box form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.box form input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.box form input:focus {
+    border-color: #6a11cb; /* Color del borde al enfocar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Efecto de brillo */
+}
+
+.box form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: #fff;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.box form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05); /* Efecto de zoom */
+    cursor: pointer;
+}
+
+.box form button:active {
+    transform: scale(0.95); /* Efecto de clic */
+}
